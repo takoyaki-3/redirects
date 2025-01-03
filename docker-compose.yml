@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  url-redirect:
+    build: .
+    ports:
+      - "5246:5000"
+    volumes:
+      - ./redirects.json:/app/redirects.json:ro
